@@ -1,10 +1,14 @@
 {
-  "name": "raycast-obsidian-tasks-extension",
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "obsidian-tasks",
   "title": "Obsidian Tasks",
   "description": "Manage your Obsidian Tasks through Raycast",
   "icon": "command-icon.png",
   "author": "ozencb",
   "license": "MIT",
+  "categories": [
+    "Productivity"
+  ],
   "commands": [
     {
       "name": "list-tasks",
@@ -102,19 +106,16 @@
     "@raycast/api": "^1.94.3",
     "date-fns": "^2.30.0",
     "fs-extra": "^11.1.0",
-    "gray-matter": "^4.0.3",
-    "react": "^18.2.0"
+    "gray-matter": "^4.0.3"
   },
   "devDependencies": {
+    "@raycast/eslint-config": "^1.0.6",
     "@types/fs-extra": "^9.0.13",
     "@types/node": "~18.8.3",
     "@types/react": "^18.0.28",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "prettier": "^2.5.1",
-    "typescript": "^4.4.3"
+    "eslint": "^8.42.0",
+    "prettier": "^2.8.8",
+    "typescript": "^4.5.4"
   },
   "scripts": {
     "build": "ray build -e dist -o ./dist",
